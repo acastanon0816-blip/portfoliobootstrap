@@ -4,133 +4,150 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Showcase 2 - Photoshop Brand Package</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/sitewide.css" />
     <link rel="stylesheet" href="css/showcase.css" />
   </head>
+
   <body>
     <header>
-      <h1>Showcase 2: Photoshop Brand Package</h1>
-
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Portfolio</a>
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Portfolio</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="resume.html">Resume</a>
-        </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Showcases
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="showcase1.html">Showcase 1</a></li>
+                  <li><a class="dropdown-item active" aria-current="page" href="showcase2.html">Showcase 2</a></li>
+                  <li><a class="dropdown-item" href="showcase3.html">Showcase 3</a></li>
+                  <li><a class="dropdown-item" href="showcase4.html">Showcase 4</a></li>
+                </ul>
+              </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Showcases
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="showcase1.html">Showcase 1</a></li>
-            <li><a class="dropdown-item" href="showcase2.html">Showcase 2</a></li>
-            <li><a class="dropdown-item" href="showcase3.html">Showcase 3</a></li>
-            <li><a class="dropdown-item" href="showcase4.html">Showcase 4</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-            Color & Typography
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="color-theory.html">Color Theory</a></li>
-            <li><a class="dropdown-item" href="color-themes.html">Color Themes</a></li>
-            <li><a class="dropdown-item" href="typography.html">Typography</a></li>
-          </ul>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Color &amp; Typography
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="color-theory.html">Color Theory</a></li>
+                  <li><a class="dropdown-item" href="color-themes.html">Color Themes</a></li>
+                  <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Project Overview</h2>
-        <p>
-          The aim of this project was to create a brand package in Adobe Photoshop. The goal was to
-          design a consistent visual identity and apply it across multiple marketing
-          materials. The final package includes a logo, a business card design, and an
-          Instagram cover graphic to demonstrate how the brand would appear across
-          platforms.
-        </p>
-      </section>
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <h1 class="display-5">Showcase 2: Photoshop Brand Package</h1>
+        <p class="lead">Logo • Business Card • Instagram Cover</p>
+      </div>
 
-      <section>
-        <h2>Deliverables</h2>
+      <!-- Overview -->
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h2 class="h4">Project Overview</h2>
+          <p class="mb-0">
+            The aim of this project was to create a brand package in Adobe Photoshop. The goal was to
+            design a consistent visual identity and apply it across multiple marketing materials. The final
+            package includes a logo, a business card design, and an Instagram cover graphic to demonstrate
+            how the brand would appear across platforms.
+          </p>
+        </div>
+      </div>
 
-        <h3>1) Logo</h3>
-        <p>
-          I created a logo that represents the brand in a clear and audience appropriate way.
-          I focused on readability, balance, and a design that works at different sizes.
-        </p>
-        <figure>
-          <img src="images/castanonproject2logo.png" alt="Brand logo design" />
-          <figcaption>Logo (Photoshop).</figcaption>
-        </figure>
+      <!-- Deliverables -->
+      <h2 class="h4 mb-3">Deliverables</h2>
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/castanonproject2logo.png" class="card-img-top img-fluid" alt="Brand logo design">
+            <div class="card-body">
+              <h3 class="h5 card-title">Logo</h3>
+              <p class="card-text">
+                I created a logo that represents the brand in a clear and audience-appropriate way.
+                I focused on readability, balance, and a design that works at different sizes.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <h3>2) Business Card</h3>
-        <p>
-          The business card uses the same brand elements (type, colors, spacing) to keep
-          the identity consistent. I included a clean layout to make contact information
-          easy to read.
-        </p>
-        <figure>
-          <img src="images/castanonphotoshopbcard.png" alt="Business card mockup or design" />
-          <figcaption>Business card design (Photoshop).</figcaption>
-        </figure>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/castanonphotoshopbcard.png" class="card-img-top img-fluid" alt="Business card design">
+            <div class="card-body">
+              <h3 class="h5 card-title">Business Card</h3>
+              <p class="card-text">
+                The business card uses the same brand elements (type, colors, spacing) to keep the identity consistent.
+                I used a clean layout to make contact information easy to read.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <h3>3) Instagram Cover</h3>
-        <p>
-          This Instagram cover graphic was designed to match the brand’s look and feel
-          while being visually engaging for social media. I used strong hierarchy and
-          simple shapes to help the text stand out.
-        </p>
-        <figure>
-          <img src="images/Castanonproject2instagram.png" alt="Instagram cover design" />
-          <figcaption>Instagram cover graphic (Photoshop).</figcaption>
-        </figure>
-      </section>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/Castanonproject2instagram.png" class="card-img-top img-fluid" alt="Instagram cover design">
+            <div class="card-body">
+              <h3 class="h5 card-title">Instagram Cover</h3>
+              <p class="card-text">
+                This cover graphic matches the brand’s look and feel while staying visually engaging for social media.
+                I used hierarchy and simple shapes to help the text stand out.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <section>
-        <h2>Tools and Techniques Used</h2>
-        <ul>
-          <li><strong>Layers and layer organization:</strong> kept each element editable and easy to update or copy.</li>
-          <li><strong>Shape tools and alignment:</strong> created clean layouts and consistent spacing.</li>
-          <li><strong>Type Tool:</strong> to keep text readable and balanced, but also fun
-          <li><strong>Transformation Tool:</strong> allowed resizing without losing quality.</li>
-          <li><strong>Exporting assets:</strong> saved final files in web-friendly formats for portfolio display.</li>
-        </ul>
-      </section>
+      <!-- Tools + Techniques -->
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h2 class="h4">Tools and Techniques Used</h2>
+          <ul class="mb-0">
+            <li><strong>Layers and layer organization:</strong> kept each element editable and easy to update or reuse.</li>
+            <li><strong>Shape tools and alignment:</strong> created clean layouts and consistent spacing.</li>
+            <li><strong>Type Tool:</strong> kept text readable, balanced, and visually engaging.</li>
+            <li><strong>Transform tool:</strong> resized elements while maintaining quality.</li>
+            <li><strong>Exporting assets:</strong> saved final files in web-friendly formats for portfolio display.</li>
+          </ul>
+        </div>
+      </div>
 
-      <section>
-        <h2>Challenges and Improvements</h2>
-        <p>
-          One challenge I faced was learning how to subtract shapes correctly when creating the banner.
-          The option was not available because I was not using the correct tool settings. After lots of trial
-          and error, at times deleting the layer and starting all over again, I finally adjusted the shape mode
-          and was able to complete it properly.
- 
-        </p>
-      </section>
+      <!-- Challenges -->
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="h4">Challenges and Improvements</h2>
+          <p class="mb-0">
+            One challenge I faced was learning how to subtract shapes correctly when creating the banner.
+            The option was not available because I was not using the correct tool settings. After trial and error,
+            including restarting layers when needed, I adjusted the shape mode and was able to complete it properly.
+          </p>
+        </div>
+      </div>
     </main>
 
-    <footer>
-      <p><a href="index.html">Back to Home</a></p>
-      <p>&copy; 2026</p>
+    <footer class="container py-4 border-top text-muted">
+      <p class="mb-1"><a href="index.html">Back to Home</a></p>
+      <p class="mb-0">&copy; 2026</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
