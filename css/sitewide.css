@@ -1,0 +1,190 @@
+/* css/sitewide.css */
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555555;
+  --border: #dddddd;
+  --link: #0b57d0;
+  --link-hover: #063a8f;
+  --surface: #f6f7f9;
+  --base-font-size: 16px;
+}
+
+[data-theme="dark"] {
+  --bg: #0f1115;
+  --text: #f2f3f5;
+  --muted: #b7bcc6;
+  --border: #2a2f3a;
+  --link: #7ab7ff;
+  --link-hover: #b4d7ff;
+  --surface: #171a21;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: var(--base-font-size);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+header,
+main,
+footer {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin-top: 24px;
+  font-size: 1.3rem;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+  background: #eceff3;
+}
+
+figure {
+  margin: 16px 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.site-nav .nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.site-nav .nav-list > li {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+  color: var(--text);
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background: #eceff3;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 220px;
+  padding: 8px;
+  margin: 0;
+  list-style: none;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  z-index: 100;
+}
+
+.has-dropdown.open > .dropdown {
+  display: block;
+}
+
+.dropdown a,
+.dropdown .menu-item {
+  width: 100%;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.dropdown a:hover,
+.dropdown a:focus,
+.dropdown .menu-item:hover,
+.dropdown .menu-item:focus {
+  background: var(--surface);
+}
+
+.dropdown-label {
+  padding: 6px 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}

@@ -1,0 +1,50 @@
+/* css/resume.css */
+
+.resume-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.resume-header h2 {
+  margin: 0;
+}
+
+.resume-section {
+  margin-top: 18px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.resume-section summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.resume-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.resume-section summary::before {
+  content: "▸ ";
+  color: var(--muted);
+}
+
+.resume-section details[open] summary::before {
+  content: "▾ ";
+}
+
+.resume-section details[open] summary {
+  color: var(--link);
+}
