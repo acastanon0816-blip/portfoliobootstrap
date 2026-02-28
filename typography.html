@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Typography Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/sitewide.css" />
     <link rel="stylesheet" href="css/color-and-type.css" />
   </head>
@@ -11,61 +12,47 @@
     <header>
       <h1>Typography Overview</h1>
 
-      <nav class="site-nav" aria-label="Primary">
-  <ul class="nav-list">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="resume.html">Resume</a></li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Portfolio</a>
 
-    <li class="has-dropdown">
-      <button class="dropdown-toggle" type="button" aria-expanded="false">
-        Showcases
-      </button>
-      <ul class="dropdown">
-        <li><a href="showcase1.html">Showcase 1</a></li>
-        <li><a href="showcase2.html">Showcase 2</a></li>
-        <li><a href="showcase3.html">Showcase 3</a></li>
-        <li><a href="showcase4.html">Showcase 4</a></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Showcases
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="showcase1.html">Showcase 1</a></li>
+            <li><a class="dropdown-item" href="showcase2.html">Showcase 2</a></li>
+            <li><a class="dropdown-item" href="showcase3.html">Showcase 3</a></li>
+            <li><a class="dropdown-item" href="showcase4.html">Showcase 4</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Color & Typography
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="color-theory.html">Color Theory</a></li>
+            <li><a class="dropdown-item" href="color-themes.html">Color Themes</a></li>
+            <li><a class="dropdown-item" href="typography.html">Typography</a></li>
+          </ul>
+        </li>
+
       </ul>
-    </li>
-
-    <li class="has-dropdown">
-      <button class="dropdown-toggle" type="button" aria-expanded="false">
-        Color Theory
-      </button>
-      <ul class="dropdown">
-        <li><a href="color-theory.html">Overview</a></li>
-        <li><a href="color-themes.html">Color Themes</a></li>
-        <li><a href="color-theory-article.html">Article</a></li>
-      </ul>
-    </li>
-
-    <li class="has-dropdown">
-      <button class="dropdown-toggle" type="button" aria-expanded="false">
-        Typography
-      </button>
-      <ul class="dropdown">
-        <li><a href="typography.html">Overview</a></li>
-        <li><a href="font-types.html">Font Types</a></li>
-        <li><a href="typography-article.html">Article</a></li>
-      </ul>
-    </li>
-
-    <li class="has-dropdown">
-      <button class="dropdown-toggle" type="button" aria-expanded="false">
-        Theme
-      </button>
-      <ul class="dropdown">
-        <li class="dropdown-label">Mode</li>
-        <li><button class="menu-item" type="button" data-theme-mode="light">Light</button></li>
-        <li><button class="menu-item" type="button" data-theme-mode="dark">Dark</button></li>
-
-        <li class="dropdown-label">Font Size</li>
-        <li><button class="menu-item" type="button" data-font-size="small">Small</button></li>
-        <li><button class="menu-item" type="button" data-font-size="medium">Medium</button></li>
-        <li><button class="menu-item" type="button" data-font-size="large">Large</button></li>
-      </ul>
-    </li>
-  </ul>
+    </div>
+  </div>
 </nav>
 
       <nav aria-label="Typography Sub Navigation">
@@ -123,5 +110,6 @@
       <p>&copy; 2026</p>
     </footer>
     <script src="js/site.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
